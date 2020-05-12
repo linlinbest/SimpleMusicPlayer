@@ -1,2 +1,26 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/button_icons">
+        <file>close.svg</file>
+        <file>cloud.svg</file>
+        <file>files.svg</file>
+        <file>like.svg</file>
+        <file>loop.svg</file>
+        <file>loop_on_one.svg</file>
+        <file>minimize.svg</file>
+        <file>next.svg</file>
+        <file>pause.svg</file>
+        <file>play.svg</file>
+        <file>playlist.svg</file>
+        <file>random.svg</file>
+        <file>share.svg</file>
+        <file>prev.svg</file>
+        <file>volume.svg</file>
+        <file>remove.svg</file>
+        <file>highlight_remove.svg</file>
+        <file>no_music.png</file>
+        <file>play_gray.svg</file>
+    </qresource>
+    <qresource prefix="/backgrounds">
+        <file>sunset.jpg</file>
+    </qresource>
+</RCC>

@@ -1,4 +1,7 @@
-QT       += core gui
+QT       += \
+    core gui\
+    multimedia\
+    sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,16 +19,39 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    main.cpp \
-    mainwindow.cpp
+    models/Music.cpp \
+    models/MusicList.cpp \
+    utils/Common.cpp \
+    views/LyricWidget.cpp \
+    views/MainWindow.cpp \
+    views/MiniMusicPlayer.cpp \
+    views/buttons/VolumeButton.cpp \
+    views/PlaylistWidget.cpp \
+    views/list_items/MusicItem.cpp \
+    main.cpp
 
 HEADERS += \
-    mainwindow.h
+    models/Music.h \
+    models/MusicList.h \
+    utils/Common.h \
+    views/LyricWidget.h \
+    views/MainWindow.h \
+    views/MiniMusicPlayer.h \
+    views/buttons/VolumeButton.h \
+    views/PlaylistWidget.h \
+    views/list_items/MusicItem.h
 
 FORMS += \
-    mainwindow.ui
+    views/MainWindow.ui \
+    views/MiniMusicPlayer.ui \
+    views/list_items/MusicItem.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    images/images.qrc
+
+DEFINES += QT_DEPRECATED_WARNINGS
